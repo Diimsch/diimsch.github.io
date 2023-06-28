@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm deploy`
+### `npm run deploy`
 Builds the app for production, commits the changes made to the `gh-pages` branch and starts a deployment afterwards.
 
 ### `npm start`
