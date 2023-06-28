@@ -4,17 +4,12 @@
 
 html,
 body {
-
+  background-color: #461e4b;
 }
 
-.background {
-  display: flex;
-  justify-content: center;
-}
 
 .background-image {
   height: 100vh;
-  width: 100%;
 }
 
 .parallax {
@@ -64,7 +59,7 @@ body {
 }
 
 .parallax__layer__2 {
-  transform: translateZ(-200px) scale(3);
+  transform: translateZ(-200px) translateY(-500px) scale(3.5);
 }
 
 .parallax__layer__3 {

@@ -10,10 +10,13 @@ import layer6 from './assets/layer_6.png';
 function App() {
   return (
     <div className='App'>
-      <div className='background'>
+      {/* <div className='background'>
         <img className="background-image" alt='background-image' src={layer0} />
-      </div>
+      </div> */}
       <div className='parallax'>
+        <div className='parallax__layer parallax__layer__2'>
+          <img alt='paralax layer' src={layer0} />
+        </div>
         <div className='parallax__layer parallax__layer__3'>
           <img alt='paralax layer' src={layer1} />
         </div>
