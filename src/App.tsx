@@ -1,41 +1,68 @@
+import React from 'react';
 import './App.css';
-import layer0 from './assets/layer_0_export.png';
-import layer1 from './assets/layer_1_export.png';
-import layer2 from './assets/layer_2_export.png';
-import layer3 from './assets/layer_3_export.png';
-import layer4 from './assets/layer_4_export.png';
-import layer5 from './assets/layer_5.png';
-import layer6 from './assets/layer_6.png';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className='App'>
-      {/* <div className='background'>
-        <img className="background-image" alt='background-image' src={layer0} />
-      </div> */}
-      <div className='parallax'>
-        <div className='parallax__layer parallax__layer__2'>
-          <img alt='paralax layer' src={layer0} />
+    <div className=''>
+      <div className='bg-orange-100 drop-shadow-2xl m-10 rounded-xl mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:py-20 lg:px-24'>
+        <div className='lg:flex lg:justify-between lg:gap-4'>
+          <Header></Header>
+
+          <main className='pt-24 lg:w-1/2 lg:py-24 flex-col flex justify-between'>
+            <section
+              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              id='about'
+            >
+              <p>
+                Starting in 2014 during high school, I embarked on my coding
+                journey, exploring the world of software development. Fascinated
+                by the possibilities it offered, I continued my path and
+                enrolled in college in 2018, pursuing a
+                <a className='font-bold' href='https://www.hs-aalen.de/'>
+                  {' '}
+                  Bachelor's degree
+                </a>
+                <br />
+                <br />
+                Balancing my studies and passion for coding, I was fortunate to
+                secure a position as an Intern at{' '}
+                <a className='font-bold' href='https://www.c-com.net/en/home/'>
+                  {' '}
+                  c-Com{' '}
+                </a>
+                , allowing me to gain practical experience in the industry while
+                still pursuing my education.
+                <br />
+                <br />I successfully completed my Bachelor's degree in 2022,
+                equipped with both theoretical knowledge and practical
+                experience, ready to embark on new professional opportunities
+                and contribute to the ever-evolving world of software
+                development
+              </p>
+            </section>
+            <section
+              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              id='experience'
+            >
+              ⚠ Experience under construction ⚠
+            </section>
+            <section
+              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              id='projects'
+            >
+              ⚠ Projects under construction ⚠
+            </section>
+            <footer className='text-slate-500 text-sm'>
+              The layout and Design of this Website have been heavily inspired
+              by
+              <a className='font-bold' href='https://brittanychiang.com'>
+                {' '}
+                Brittanny Chiang
+              </a>{' '}
+            </footer>
+          </main>
         </div>
-        <div className='parallax__layer parallax__layer__3'>
-          <img alt='paralax layer' src={layer1} />
-        </div>
-        <div className='parallax__layer parallax__layer__4'>
-          <img alt='paralax layer' src={layer2} />
-        </div>
-        <div className='parallax__layer parallax__layer__5'>
-          <img alt='paralax layer' src={layer3} />
-        </div>
-        <div className='parallax__layer parallax__layer__6'>
-          <img alt='paralax layer' src={layer4} />
-        </div>
-        {/* <div className='parallax__layer parallax__layer__5'>
-          <img alt="paralax layer" src={layer5} />
-        </div>
-        <div className='parallax__layer parallax__layer__6'>
-          <img alt="paralax layer" src={layer6} />
-        </div> */}
-        <div className='parallax__cover'></div>
       </div>
     </div>
   );
