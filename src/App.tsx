@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Card from './components/Card';
+import { experiences } from './assets/experiences';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <Header></Header>
 
-          <main className='pt-24 lg:w-1/2 lg:py-24 flex-col flex justify-between'>
+          <main className='pt-24 lg:w-1/2 lg:py-24 flex-col flex gap-3 justify-between'>
             <section
               className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
               id='about'
@@ -42,10 +44,12 @@ function App() {
               </p>
             </section>
             <section
-              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              className=' flex gap-3 flex-col bg-orange-50 drop-shadow-xl p-2 rounded-xl'
               id='experience'
             >
-              ⚠ Experience under construction ⚠
+              {experiences.map((exp) => (
+                <Card {...exp}></Card>
+              ))}
             </section>
             <section
               className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
