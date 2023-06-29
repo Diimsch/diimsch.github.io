@@ -3,7 +3,7 @@ import Socials from './Socials';
 
 function Header() {
   return (
-    <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg: flex-col lg: justify-between lg:py-24'>
+    <header className='lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2 lg:justify-between lg:py-24'>
       <div>
         <h1 className='text-4xl font-bold tracking-tight sm:text-5xl'>
           <a href='/'>Thomas Schmidt</a>
@@ -11,7 +11,6 @@ function Header() {
         <h2 className='text-white w-fit bg-black mt-3 text-lg font-medium tracking-tight sm:text-xl'>
           Frontend-Developer at c-Com
         </h2>
-
         <nav className='nav hidden lg:block' aria-label='In-page jump links'>
           <ul className='mt-16 w-max'>
             <li>

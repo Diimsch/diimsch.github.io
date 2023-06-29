@@ -3,17 +3,18 @@ import './App.css';
 import Header from './components/Header';
 import Card from './components/Card';
 import { experiences } from './assets/experiences';
+import { projects } from './assets/projects';
 
 function App() {
   return (
     <div className=''>
-      <div className='bg-orange-100 drop-shadow-2xl m-10 rounded-xl mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:py-20 lg:px-24'>
+      <div className='bg-orange-100 drop-shadow-2xl min-h-screen max-w-screen-xl px-6 py-12 font-sans md:py-20 lg:px-24  mx-auto md:px-12 lg:py-0'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <Header></Header>
 
-          <main className='pt-24 lg:w-1/2 lg:py-24 flex-col flex gap-3 justify-between'>
+          <main className='pt-24 lg:w-1/2 lg:py-24'>
             <section
-              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl mb-16 scroll-mt-16 md:mb-24 lg:mb-20 lg:scroll-mt-24'
               id='about'
             >
               <p>
@@ -44,18 +45,20 @@ function App() {
               </p>
             </section>
             <section
-              className=' flex gap-3 flex-col bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              className=' bg-orange-50 drop-shadow-xl p-2 rounded-xl mb-16 scroll-mt-16 md:mb-24 lg:mb-20 lg:scroll-mt-24'
               id='experience'
             >
-              {experiences.map((exp) => (
-                <Card {...exp}></Card>
+              {experiences.map((exp, index) => (
+                <Card key={exp.title + index.toString()} {...exp}></Card>
               ))}
             </section>
             <section
-              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl'
+              className='bg-orange-50 drop-shadow-xl p-2 rounded-xl mb-16 scroll-mt-16 md:mb-24 lg:mb-20 lg:scroll-mt-24'
               id='projects'
             >
-              ⚠ Projects under construction ⚠
+              {projects.map((exp, index) => (
+                <Card key={exp.title + index.toString()} {...exp}></Card>
+              ))}
             </section>
             <footer className='text-slate-500 text-sm'>
               The layout and Design of this Website have been heavily inspired

@@ -62,9 +62,9 @@ function Card(props?: CardProps) {
                       aria-hidden='true'
                     >
                       <path
-                        fill-rule='evenodd'
+                        fillRule='evenodd'
                         d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z'
-                        clip-rule='evenodd'
+                        clipRule='evenodd'
                       ></path>
                     </svg>
                   </span>
@@ -75,9 +75,9 @@ function Card(props?: CardProps) {
           <p className='mt-2 text-sm leading-normal'>{props?.description}</p>
           <ul className='mt-2 flex flex-wrap' aria-label='Technologies used'>
             {props?.tags
-              ? props?.tags.map((tag) => {
+              ? props?.tags.map((tag, index) => {
                   return (
-                    <li className='mr-1.5 mt-2'>
+                    <li key={tag + index.toString()} className='mr-1.5 mt-2'>
                       <div className='flex items-center rounded-full bg-orange-600/10 px-3 py-1 text-xs font-medium leading-5 text-orange-800 '>
                         {tag}
                       </div>
