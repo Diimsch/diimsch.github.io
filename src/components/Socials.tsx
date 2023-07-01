@@ -5,7 +5,7 @@ function Socials() {
     <ul className='ml-1 mt-8 flex items-center' aria-label='Social media'>
       <li className='mr-5 text-xs'>
         <a
-          className='block hover:text-slate-200'
+          className='block text-accent hover:text-secondary'
           href='https://github.com/diimsch'
           target='_blank'
           rel='noreferrer'
@@ -24,7 +24,7 @@ function Socials() {
       </li>
       <li className='mr-5 text-xs'>
         <a
-          className='block hover:text-slate-200 hover:text-2xl'
+          className='block text-accent hover:text-secondary hover:text-2xl'
           href='https://instagram.com/d1msch'
           target='_blank'
           rel='noreferrer'
@@ -44,7 +44,7 @@ function Socials() {
 
       <li className='mr-5 text-xs'>
         <a
-          className='block hover:text-slate-200'
+          className='block text-accent hover:text-secondary'
           href='https://de.linkedin.com/in/thomas-schmidt-546434213'
           target='_blank'
           rel='noreferrer'
