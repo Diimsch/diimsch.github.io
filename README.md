@@ -1,4 +1,3 @@
-https://colorhunt.co/palette/3c625561876ea6bb8deae7b1
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
