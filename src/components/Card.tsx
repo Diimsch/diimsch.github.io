@@ -40,6 +40,7 @@ function Card(props?: CardProps) {
         >
           {props?.image ? (
             <img
+              alt={props.title}
               className='max-h-48 rounded border-2 border-primary-200/10 transition group-hover:border-accent/30 sm:order-1 sm:col-span-2 sm:translate-y-1'
               src={props.image}
             ></img>
