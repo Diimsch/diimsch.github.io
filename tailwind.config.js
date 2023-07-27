@@ -12,11 +12,11 @@ module.exports = {
         // accent: '#1e2634',
 
         // Green Theme
-        text: '#1f141d',
-        background: '#ede3eb',
-        primary: '#36533d',
-        secondary: '#fbf9fb',
-        accent: '#0e1610',
+        text: '#0d1711',
+        background: '#f8fbfa',
+        primary: '#4d8965',
+        secondary: '#c4decf',
+        accent: '#86bb9b',
 
         // Purple Theme
         // text: '#020104',
